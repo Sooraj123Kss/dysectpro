@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>dysect — Feedback</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared/styles.css">
+</head>
+<body>
+
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+
+<header class="nav" id="siteNav">
+  <div class="logo">
+    <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.4"/><line x1="4" y1="16" x2="20" y2="8" stroke="#FF4A1C" stroke-width="1.4"/></svg>
+    dysect<span class="cut-mark">⁄</span>
+  </div>
+  <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html#anatomy">Anatomy</a>
+    <a href="product.html">Product</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="index.html#specs">Specs</a>
+    <a href="index.html#models">Models</a>
+    <a class="nav-menu-cta" href="index.html#models">Pre-order</a>
+  </nav>
+  <a class="nav-cta" href="index.html#models">Pre-order</a>
+</header>
+
+<section class="hero" style="padding:160px 0 80px;">
+  <div class="hero-grid"></div>
+  <div class="wrap hero-inner">
+    <div>
+      <div class="eyebrow" style="opacity:0;animation:riseIn 1s var(--ease) 0s forwards;"><span class="dot"></span>Feedback</div>
+      <h1>Tell us what<br><em>you noticed.</em></h1>
+      <p class="lead">We build dysect like a lab instrument: observations become iterations. Share your experience and what you’d dissect next.</p>
+      <div class="hero-cta">
+        <a class="btn-primary" href="#form">Send feedback →</a>
+        <a class="btn-ghost" href="product.html">See product ↓</a>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <div class="image-card">
+        <img alt="Team reviewing product feedback notes" src="https://images.unsplash.com/photo-1758691736934-e5d6d0c7f875?auto=format&fit=crop&w=1200&h=800&q=80" width="1200" height="800" loading="lazy">
+        <div class="cap">Transparent iteration • community notes</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad" id="form" style="background:var(--paper);color:var(--ink);">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-bottom:36px;">
+      <div class="eyebrow" style="color:var(--steel-dim);margin-bottom:14px;"><span class="dot" style="background:var(--scan);"></span>Rate & write</div>
+      <h2 style="max-width:760px;">What should dysect change next?</h2>
+      <p style="color:#3a3c41;">This form is demo-only. It shows validation styling and keeps the same visual language as the rest of the site.</p>
+    </div>
+
+    <div class="grid-2">
+      <div class="reveal">
+        <div class="form-shell light-theme">
+          <form onsubmit="event.preventDefault(); document.getElementById('submitState').textContent='Sent ✓ (demo)'; this.reset();">
+            <label>Your name</label>
+            <input type="text" placeholder="Jordan" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="jordan@email.com" required>
+
+            <label>Which part did you test?</label>
+            <input type="text" placeholder="Cyclones / filtration / nozzle / bin / assembly" required>
+
+            <label>How was it?</label>
+            <div class="inline-actions" style="margin-top:10px;">
+              <span class="pill"><b>1</b> Needs work</span>
+              <span class="pill"><b>2</b> Okay</span>
+              <span class="pill"><b>3</b> Great</span>
+              <span class="pill"><b>4</b> Excellent</span>
+            </div>
+
+            <label style="margin-top:16px;">Short message</label>
+            <textarea placeholder="What felt strong? What felt friction? What would you like to see dissected next?" required></textarea>
+
+            <div class="inline-actions">
+              <button type="submit" class="btn-primary" style="border-radius:14px;border:1px solid var(--cut);">Send</button>
+              <div class="small-note" id="submitState"> </div>
+            </div>
+
+            <div class="small-note" style="margin-top:16px;">
+              By submitting you agree this is a concept demo — no data is sent.
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="image-card">
+<img alt="Hands assembling a vacuum component" src="https://images.unsplash.com/photo-1640955785023-1854685dae05?auto=format&fit=crop&w=1200&h=800&q=80" width="1200" height="800" loading="lazy">
+          <div class="cap">Photo: open the case, document the detail</div>
+        </div>
+        <div class="feature-row" style="margin-top:18px;">
+          <div class="pill"><b>5 years</b> warranty mindset</div>
+          <div class="pill"><b>0 hidden</b> design rule</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="closer">
+  <div class="closer-grid"></div>
+  <h2 class="reveal">Ready to<br>dissect together?</h2>
+  <form class="closer-form reveal" onsubmit="event.preventDefault();this.querySelector('button').textContent='Sent ✓';">
+    <input type="email" placeholder="you@email.com" required>
+    <button type="submit">Notify me</button>
+  </form>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="logo" style="font-size:16px;">
+      <svg viewBox="0 0 24 24" fill="none" style="width:17px;height:17px;"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.4"/><line x1="4" y1="16" x2="20" y2="8" stroke="#FF4A1C" stroke-width="1.4"/></svg>
+      dysect<span class="cut-mark">⁄</span>
+    </div>
+    <div class="f-links">
+      <a href="index.html#anatomy">Anatomy</a>
+      <a href="product.html">Product</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="#">Support</a>
+    </div>
+    <div class="f-note">K S SOORAJ — © 2026 dysect is a concept brand, created for demonstration.</div>
+  </div>
+</footer>
+
+<script src="shared/scripts.js"></script>
+</body>
+</html>
+

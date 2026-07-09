@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>dysect — Product</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared/styles.css">
+</head>
+<body>
+
+<div class="rail"><div class="rail-fill" id="railFill"></div></div>
+
+<header class="nav" id="siteNav">
+  <div class="logo">
+    <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.4"/><line x1="4" y1="16" x2="20" y2="8" stroke="#FF4A1C" stroke-width="1.4"/></svg>
+    dysect<span class="cut-mark">⁄</span>
+  </div>
+  <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html#anatomy">Anatomy</a>
+    <a href="product.html">Product</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="index.html#specs">Specs</a>
+    <a href="index.html#models">Models</a>
+    <a class="nav-menu-cta" href="index.html#models">Pre-order</a>
+  </nav>
+  <a class="nav-cta" href="#gallery">Explore</a>
+</header>
+
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="wrap hero-inner">
+    <div>
+      <div class="eyebrow" style="opacity:0;animation:riseIn 1s var(--ease) 0s forwards;"><span class="dot"></span>Dysect ONE • Product page</div>
+      <h1>Built to be<br><em>opened.</em></h1>
+      <p class="lead">A cordless vacuum designed around transparency: fourteen cyclones, sealed filtration, and a tool-free disassembly rhythm you can follow in minutes.</p>
+      <div class="hero-cta">
+        <a href="#gallery" class="btn-primary">View images →</a>
+        <a href="feedback.html" class="btn-ghost">Leave feedback ↓</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="scan-sweep"></div>
+      <img class="hero-photo" src="https://images.unsplash.com/photo-1765970101654-337b573142fb?auto=format&fit=crop&w=800&q=80" alt="Person using a cordless vacuum on hardwood flooring" width="800" height="600" loading="eager">
+    </div>
+  </div>
+  <div class="scroll-cue"><div class="line"></div>Scroll to inspect</div>
+</section>
+
+<section class="section-pad" id="gallery" style="background:var(--graphite-2);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow" style="margin-bottom:14px;"><span class="dot"></span>Image gallery</div>
+      <h2 style="margin-bottom:0;">See it like an engineer.</h2>
+      <p>Royalty-free photography from Unsplash — vacuum, filtration, and cleaning scenes that match the dysect engineering story.</p>
+    </div>
+
+    <div class="gallery">
+      <div class="g-item reveal">
+        <a href="https://unsplash.com/photos/a-person-using-a-vacuum-to-clean-a-carpet-cpIgNaazQ6w" target="_blank" rel="noopener noreferrer">
+          <img alt="Cordless vacuum cleaner in use" src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=800&h=560&q=80" width="800" height="560" loading="lazy">
+        </a>
+        <div class="g-meta">Compact body • modular seams</div>
+      </div>
+      <div class="g-item reveal">
+        <a href="https://unsplash.com/photos/a-woman-in-a-green-shirt-and-black-gloves-vacuuming-a-gray-ottoman-5TXz228u4eo" target="_blank" rel="noopener noreferrer">
+          <img alt="Cordless vacuum on hardwood floor" src="https://images.unsplash.com/photo-1686178827149-6d55c72d81df?auto=format&fit=crop&w=800&h=560&q=80" width="800" height="560" loading="lazy">
+        </a>
+        <div class="g-meta">Cordless airflow • sealed path</div>
+      </div>
+      <div class="g-item reveal">
+        <a href="https://unsplash.com/photos/a-black-robot-vacuum-on-a-wooden-floor-uhJgh4FHi6I" target="_blank" rel="noopener noreferrer">
+          <img alt="Robot vacuum on clean floor" src="https://images.unsplash.com/photo-1653990480360-31a12ce9723e?auto=format&fit=crop&w=800&h=560&q=80" width="800" height="560" loading="lazy">
+        </a>
+        <div class="g-meta">Nozzle + roller • anti-tangle</div>
+      </div>
+      <div class="g-item reveal">
+        <a href="https://unsplash.com/photos/clear-spray-bottle-9gzU1mtTzWM" target="_blank" rel="noopener noreferrer">
+          <img alt="Cleaning spray and cloth for dust removal" src="https://images.unsplash.com/photo-1550963295-019d8a8a61c5?auto=format&fit=crop&w=800&h=560&q=80" width="800" height="560" loading="lazy">
+        </a>
+        <div class="g-meta">Filtration mesh • HEPA-grade concept</div>
+      </div>
+      <div class="g-item reveal">
+        <a href="https://unsplash.com/photos/white-wooden-kitchen-cabinet-and-sink-hiPh9yms-n0" target="_blank" rel="noopener noreferrer">
+          <img alt="Spotless modern kitchen after cleaning" src="https://images.unsplash.com/photo-1598928473162-0316ade00bbe?auto=format&fit=crop&w=800&h=560&q=80" width="800" height="560" loading="lazy">
+        </a>
+        <div class="g-meta">Bin capacity • clean separation</div>
+      </div>
+      <div class="g-item reveal">
+        <a href="https://unsplash.com/photos/a-white-robot-vacuum-on-a-wooden-floor-A6J0rdPX-tc" target="_blank" rel="noopener noreferrer">
+          <img alt="Cleaning supplies and accessories laid out" src="https://images.unsplash.com/photo-1637915179148-c8f7f8affbf0?auto=format&fit=crop&w=800&h=560&q=80" width="800" height="560" loading="lazy">
+        </a>
+        <div class="g-meta">Tool-free access • quick service</div>
+      </div>
+    </div>
+    <p class="photo-credit">Photos via <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a> — free for commercial and personal use.</p>
+
+    <div class="feature-row reveal">
+      <div class="pill"><b>14</b> micro-cyclones</div>
+      <div class="pill"><b>HEPA</b> sealed filtration</div>
+      <div class="pill"><b>0.3µm</b> target capture</div>
+      <div class="pill"><b>Tool-free</b> disassembly</div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad" style="background:var(--paper);color:var(--ink);">
+  <div class="wrap">
+    <div class="grid-2">
+      <div class="reveal" style="padding-right:10px;">
+        <div class="eyebrow" style="color:var(--steel-dim);margin-bottom:14px;">
+          <span class="dot" style="background:var(--cut);"></span>Design language
+        </div>
+        <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2rem,4.4vw,3.1rem);letter-spacing:-.02em;line-height:1.06;">Precision you can see.</h2>
+        <p style="margin-top:18px;font-size:16px;line-height:1.7;color:#3a3c41;">The product page keeps the same neon graphite / paper contrast, pairing engineering copy with real cleaning and vacuum photography.</p>
+        <div class="inline-actions">
+          <a class="btn-primary" href="feedback.html">Rate the design →</a>
+          <a class="btn-ghost" href="index.html#models">Back to models ↓</a>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="image-card">
+          <img alt="Engineer inspecting vacuum components on a workbench" src="https://images.unsplash.com/photo-1601998539036-006e7fbddb0c?auto=format&fit=crop&w=1200&h=800&q=80" width="1200" height="800" loading="lazy">
+          <div class="cap">dysect ONE • engineering inspect</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="closer">
+  <div class="closer-grid"></div>
+  <h2 class="reveal">Want your notes<br>inside the next build?</h2>
+  <form class="closer-form reveal" onsubmit="event.preventDefault();this.querySelector('button').textContent='Sent ✓';">
+    <input type="email" placeholder="you@email.com" required>
+    <button type="submit">Notify me</button>
+  </form>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="logo" style="font-size:16px;">
+      <svg viewBox="0 0 24 24" fill="none" style="width:17px;height:17px;"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.4"/><line x1="4" y1="16" x2="20" y2="8" stroke="#FF4A1C" stroke-width="1.4"/></svg>
+      dysect<span class="cut-mark">⁄</span>
+    </div>
+    <div class="f-links">
+      <a href="index.html#anatomy">Anatomy</a>
+      <a href="index.html#specs">Specs</a>
+      <a href="index.html#models">Models</a>
+      <a href="feedback.html">Feedback</a>
+    </div>
+    <div class="f-note">K S SOORAJ — © 2026 dysect is a concept brand, created for demonstration.</div>
+  </div>
+</footer>
+
+<script src="shared/scripts.js"></script>
+</body>
+</html>
+
